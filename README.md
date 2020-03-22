@@ -9,7 +9,7 @@ The game variant
 ================
 
 In the classic mastermind game, one player (called codemaker)
-chooses a secret code of lenth 4
+chooses a secret code of length 4
 by selecting one out of 6 colors for each position.
 A second player (codebreaker) is supposed to be crack the code
 by subsequently making corresponding code guesses,
@@ -18,19 +18,19 @@ of coincidences between the secret code and the code guess
 plus the number of colors that appear in both,
 secret code and code guess, but at different positions.
 
-In the YN-AB variant of hte game
-* the code lenght is generalized to an arbitrary n and the number of colors to an arbitrary k&ge;n,
-* codemakers answers only indicate whether or not a guess coincides with the secret code at all (each answer is either yes or no),
+In the YN-AB variant of the game
+* the code length is generalized to an arbitrary n and the number of colors to an arbitrary k&ge;n,
+* codemaker's answers only indicate whether or not a guess coincides with the secret code at all (each answer is either yes or no),
 * all colors of the secret code and each code guess must be distinct.
 
 The codebreaker strategy and its implementation
 ===============================================
 
-The strategy identifies a code position by position,
-each by a binary search procedure that asking appropriate guesses,
-keeping record about the identified positions with a partial solution.
-The number of necessary queries for k=O(n) is of the order O(n log n),
-which is asymtotically tight, since the worst case lower bound is
+The strategy identifies the secret code positions one-by-one,
+each using a binary search procedure which asks appropriate guesses,
+keeping record about the identified positions.
+The number of necessary queries for k=O(n) colors is of the order O(n log n),
+which is asymptotically tight, since the worst case lower bound is
 &Omega;(k log n).
 
 There are two versions implemented, depending on the number of colors:
