@@ -19,7 +19,7 @@ plus the number of colors that appear in both,
 secret code and code guess, but at different positions.
 
 In the YN-AB variant of hte game
-* the code lenght is generalized to an arbitrary n and the number of colors to an arbitrary k\ge n,
+* the code lenght is generalized to an arbitrary n and the number of colors to an arbitrary k&ge;n,
 * codemakers answers only indicate whether or not a guess coincides with the secret code at all (each answer is either yes or no),
 * all colors of the secret code and each code guess must be distinct.
 
@@ -31,7 +31,7 @@ each by a binary search procedure that asking appropriate guesses,
 keeping record about the identified positions with a partial solution.
 The number of necessary queries for k=O(n) is of the order O(n log n),
 which is asymtotically tight, since the worst case lower bound is
-\Omega(k log n).
+&Omega;(k log n).
 
 There are two versions implemented, depending on the number of colors:
 * yn_ab_nn_mastermind.m deals with the case k=n
