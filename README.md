@@ -29,7 +29,7 @@ The codebreaker strategy and its implementation
 The strategy identifies a code position by position,
 each by a binary search procedure that asking appropriate guesses,
 keeping record about the identified positions with a partial solution.
-The number of necessary queries for k=O(n) is of the order O(n log n),
+The number of necessary queries for $k=O(n)$ is of the order O(n log n),
 which is asymtotically tight, since the worst case lower bound is
 Omega(k log n).
 
