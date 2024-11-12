@@ -1,11 +1,11 @@
-# yn-ab-mastermind
+# YN-AB-Mastermind
 Codebreaker strategies for YN-AB-Mastermind (Matlab/Octave).
 
 This folder contains Matlab/Octave implementations of a simple
 binary search based codebreaker strategy for a variant of
 the popular board game mastermind.
 
-The game variant
+The Game Variant
 ================
 
 In the classic mastermind game, one player (called codemaker)
@@ -23,7 +23,7 @@ In the YN-AB variant of the game
 * codemaker's answers only indicate whether or not a guess coincides with the secret code at all (each answer is either yes or no),
 * all colors of the secret code and each code guess must be distinct.
 
-The codebreaker strategy and its implementation
+The Codebreaker Strategy and its Implementation
 ===============================================
 
 The strategy identifies the secret code positions one-by-one,
